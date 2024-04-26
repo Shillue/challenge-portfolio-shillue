@@ -1,0 +1,204 @@
+/* contato */
+section.formcontato{
+    display: flex;
+    background-color: var(--cor-de-fundo2);
+    width: 100%;
+    position: relative;
+}
+.formcontato__contacto{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 76%;
+    margin: 0% 12% 2% 12%;
+    padding: 20px;
+    position: relative;
+}
+.formcontato--esquerda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 5px;
+}
+.formcontato__img{
+    display: block;
+    width: 100%;
+}
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px;
+    width: 60%;
+}
+.formcontato__title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 85%;
+}
+.formcontato__subtext{
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 85%;
+}
+.formcontato__subtext__icon{
+    width: 25px;
+    height: 25px;
+    padding: 0px 5px 0px 5px; 
+}
+.formcontato__subtext__icon:hover{
+    transform: scale(1.4);
+    transition: 0.5s;
+    z-index: 10;
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin:10px 0px;
+    width: 100%;
+}
+.formcontato__mensagem__erro{
+    font-size: 12px;
+    font-weight: 600;
+    color:red;
+    padding: 1px;
+    margin-bottom: 2px;
+}
+.formcontato__input{
+    width: 85%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px var(--cor-de-sombra);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.formcontato__input:hover,
+.formcontato__textarea:hover{
+    border-bottom: 3px solid var(--cor-de-btn);
+}
+.formcontato__textarea{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 85%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 15px var(--cor-de-sombra);
+}
+.formcontato__input:focus,
+.formcontato__textarea:focus {
+    outline: none;
+}
+.formcontato__botao, .formcontato__mensagem__botao__voltar{
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--cor-de-btn);
+    color: var(--cor-de-fundo2);
+    box-shadow: 0px 0px 20px var(--cor-de-sombra);
+}
+.formcontato__botao:hover,
+.formcontato__mensagem__botao__voltar:hover{
+    cursor:pointer;
+    background-color: var(--cor-de-fundo2);
+    color: var(--cor-de-btn);
+    border: 2px solid var(--cor-de-btn);
+    font-weight: 600;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.formcontato__mensagem__envio{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cor-de-mensagemEnviado);
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    z-index: 10;
+    padding: 20px;
+    position: absolute;
+    left: 10%;
+    top:5%;
+    box-shadow: 0px 0px 20px var(--cor-de-sombra);
+    overflow: hidden;
+}
+.formcontato__mensagem__envio__imagem{
+    width: 25%;
+}
+.formcontato__mensagem__envio__text{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 1px 90px 20px 90px;
+}
+
+/* Responsividade */
+
+/*Telas menores 1200px*/
+@media (max-width: 1200px) {
+
+    /* contato */
+    .formcontato__contacto{
+        width: 90%;
+        margin: 0% 5% 2% 5%;
+    }
+    .formcontato--esquerda{
+        width: 0%;
+    }
+    .formcontato__img{
+        display: none;
+    }
+    .formcontato__text, 
+    .formcontato__input, 
+    .formcontato__textarea{
+        width: 98%;
+    }
+    .formcontato__mensagem__envio__text{
+        font-size: 14px;
+    }
+    .formcontato__mensagem__envio__imagem{
+        width: 30%;
+    }
+
+}
+
+/* Tela menores que 860px */
+@media (max-width:860px){
+    
+    /* contato */
+    .formcontato__contacto{
+        width: 98%;
+        margin: 0% 1% 1% 1%;
+        padding: 2px;
+    }
+    .formcontato--esquerda{
+        width: 0%;
+    }
+    .formcontato__img{
+        display: none;
+    }
+    .formcontato__text, 
+    .formcontato__input, 
+    .formcontato__textarea{
+        width: 90%;
+    }
+    .formcontato__mensagem__envio__imagem{
+        width: 40%;
+    }
+    .formcontato__mensagem__envio__text{
+        margin:1% 5% 7% 5%;
+    }
+
+} 
+    

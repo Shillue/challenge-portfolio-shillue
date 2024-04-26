@@ -1,0 +1,100 @@
+/*Sessão Menu*/
+section.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 76%;
+    height: 4em;
+    margin: 0% 12% 0.5% 12%;
+    padding: 20px;
+    background-color:var(--cor-do-menu);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0em 0.5em 0.5em var(--cor-de-sombraMenu);
+    position: relative;
+}
+section.menu header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.menu__inco{
+    height: 80px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--cor-de-sombra);
+}
+section.menu .menu__title{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+    background-image: linear-gradient(to right, #063af3, #c211cf, #7f6fea, #ff8c00, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+}
+section.menu nav .menu__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+.menu__list__item{
+    display: block;
+    padding: 10px;
+    margin: 10px;  
+    
+}
+.menu__list__item:hover{
+    font-weight: 600;
+    transform: scale(1.1);
+}
+.menu__list__item:nth-child(6){
+    font-weight: 600;
+}
+
+/* Responsividade */
+
+/*Telas menores 1200px*/
+@media (max-width: 1200px) {
+
+    /* Menu */
+    section.menu{
+        width: 90%;
+        margin:0% 5%;
+        height: 3em;  
+    }
+    .menu__list__item:nth-child(1),
+    .menu__list__item:nth-child(2),
+    .menu__list__item:nth-child(3),
+    .menu__list__item:nth-child(4),
+    .menu__list__item:nth-child(5){
+        display: none;
+    } 
+}
+
+/* Tela menores que 860px */
+@media (max-width:860px){
+    /*Sessão Menu*/
+    section.menu{
+        width: 98%;
+        height: 3em;
+        margin: 0% 1%;
+        padding: 5px 0px;
+    }
+    section.menu header{
+        padding: 10px;
+    }
+    section.menu .menu__title{
+        font-size: 20px;
+        padding: 2px;
+    }
+    .menu__inco{
+        width: 40px;
+        height: 40px;
+    }
+    section.menu nav .menu__list{
+        font-size: 12px;
+    }
+}

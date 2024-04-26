@@ -1,0 +1,104 @@
+/* Sessão de Skills/Hobbies */
+section.skills, section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 76%;
+    margin: 0% 12% 1% 12%;
+    padding: 20px;
+    position: relative;
+}
+.skills__title, .hobbies__title{
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.skills__line, .hobbies__line{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;    
+}
+.skills__box, .hobbies__box{
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--cor-de-card);
+    box-shadow: 0px 0px 30px var(--cor-de-sombra);
+}
+.skills__box:hover, 
+.hobbies__box:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.skills__img, .hobbies__img{
+    width: 25px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.skills__box:hover .skills__img, 
+.hobbies__box:hover .hobbies__img{
+    transform: scale(2) translate(130%, -90%);
+    transition: 0.5s;
+}
+.skills__name, .hobbies__name{
+    font-size: 18px;
+    font-weight: 600;
+}
+.skills__box:hover .skills__name, 
+.hobbies__box:hover .hobbies__name{
+    color: var(--cor-de-btn);
+}
+
+/* Responsividade */
+
+/*Telas menores 1200px*/
+@media (max-width: 1200px) {
+
+    /*Skills e Hobbies*/
+    section.skills, section.hobbies{
+        width: 90%;
+        margin: 0% 5% 1% 5%;
+    }
+    .skills__box, .hobbies__box{
+        width: 200px;
+        height: 100px;
+    }
+    .skills__img, .hobbies__img{
+        margin-bottom: 15px;
+    }
+    .skills__name, .hobbies__name{
+        font-size: 16px;
+    }
+
+}
+
+/* Tela menores que 860px */
+@media (max-width:860px){
+
+    /* Sessão de Skills/Habilidades */
+    .section.skills, section .hobbies{
+        width: 98%;
+        margin: 0% 1%;
+        padding: 10px 2px;
+    }
+    .skills__title, .hobbies__title{
+        font-size: 22px;
+    }
+    .skills__box, .hobbies__box{
+        width: 130px;
+        height: 95px;
+        margin: 5px;
+    }
+    .skills__name, .hobbies__name{
+        font-size: 15px;
+    }
+        
+}

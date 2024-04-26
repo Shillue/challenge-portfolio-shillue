@@ -1,0 +1,100 @@
+/* Experiência Acadêmica*/
+section.academic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--cor-de-fundo2);
+    position: relative;
+}
+.academic__title{
+    font-size: 30px;
+    font-weight: 600;  
+    margin-top: 1%;
+    padding: 10px;
+}
+.academic__courses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76%;
+    margin: 0% 12%;
+    padding: 20px;
+    flex-wrap: wrap;  
+}
+.academic__courses__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 1px;  
+}
+.academic__courses__box:hover{
+    transform: translateY(-20px); 
+    transition: 0.5s;
+}
+.academic__courses__list{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+.academic__courses__item__title{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.academic__courses__item__subtitle{
+    padding: 0px 10px 10px 10px;
+    font-size: 15px;
+}
+.academic__courses__item__img{
+    width: 100px;
+    height: 100px;
+    padding: 50px 100px;
+    background-color: var(--cor-de-card);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px var(--cor-de-sombra);
+    margin-bottom: 5px;
+}
+
+/* Responsividade */
+
+/*Telas menores 1200px*/
+@media (max-width: 1200px) {
+
+    /*Experiências acadêmicas*/
+    .academic__courses{
+        width: 90%;
+        margin: 0% 5%;
+    }
+
+}
+
+/* Tela menores que 860px */
+@media (max-width:860px){
+           
+    /* Experiência Acadêmica*/
+    .academic__title{
+        font-size: 22px;  
+    }
+    .academic__courses{
+        width: 98%;
+        margin: 1%;
+        padding: 2px;
+    }
+    .academic__courses__box{
+        margin: 0px;
+    }
+    .academic__courses__item__title{
+        font-size: 16px;
+    }
+    .academic__courses__item__subtitle{
+        font-size: 14px;
+    }
+        
+}
