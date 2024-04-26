@@ -18,7 +18,7 @@
 - Rodapé.
 
 # Pré-visualização
-![alt text](portfolio.jpg)
+![telaInicial](portfolioShillue.jpg)
 
 ### Links
 
