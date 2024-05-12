@@ -53,6 +53,7 @@ section .experience__section__title{
 .experience__text{
     font-size: 16px; 
     margin-bottom: 10px;
+    line-height: 1.2rem;
 }
 .experience__description{
     display: flex;
