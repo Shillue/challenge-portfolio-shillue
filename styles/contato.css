@@ -103,7 +103,7 @@ section.formcontato{
     padding: 5px;
     background-color: var(--cor-de-btn);
     color: var(--cor-de-fundo2);
-    box-shadow: 0px 0px 20px var(--cor-de-sombra);
+    box-shadow: 0px 0px 10px 6px var(--cor-de-sombra);
 }
 .formcontato__botao:hover,
 .formcontato__mensagem__botao__voltar:hover{
