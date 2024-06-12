@@ -100,11 +100,11 @@ section.skills, section.hobbies{
     .skills__box, .hobbies__box{
         width: 130px;
         height: 95px;
-        margin: 5px;
+        margin: 5px 5px 8px 5px;
     }
     .skills__box:hover .skills__img, 
     .hobbies__box:hover .hobbies__img{
-        transform: scale(2) translate(100%, -30%);
+        transform: scale(2) translate(100%, -20%);
         transition: 0.5s;
     }
     .skills__name, .hobbies__name{
